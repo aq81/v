@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed's website</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://kit.fontawesome.com/4d71ca4c02.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"></h1>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Work</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i id="ww" class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                 <p>Professional Designer</p>
+                  <h1>Hi I'm <span>Ahmed</span> <br>Mohammed From Qatar</h1>
+            </div>
+        </div>
+    </div>
+<!-------------ABOUT-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello I'm Ahmed Mohamed, And I'm a website devolper, And an app devolper,
+                        I graduated from a school in Qatar, Then after getting graduate from the
+                        school, I went to a college, An amazing college in the United State of
+                        America, Therefore,<br> I'm confident in my nice skills and experience.
+                    </p>
+                    
+                        <div class="tab-titles">
+                            <p id = "is1" class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p id="is2" class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p id="is3" class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <li><span>Web Devolpment <br></span>Designing Websites Well</li>
+                            <li><span>App Devolpment <br></span>Good App Devolpment</li>
+                            <li><span>Skills <br></span>I Have Awesome Skills</li>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>College</span><br>I've Got Good Experience From College</li>
+                                <li><span>School</span><br>I've Got Good Experience From School</li>
+                                <li><span>Home</span><br>I've Got Good Experience From Home</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>YouTube</span><br>YouTube Helped Me So Much</li>
+                                <li><span>Brother</span><br>My Professional Brother Helped Me</li>
+                                <li><span>Degree</span><br>I Went To College</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------Services------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2> 
+                    <p>I'm a Professional web designer with great skills and experience, this is on of my great
+                        services and I'm so good at designing</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>App Design</h2> 
+                    <p>I'm so good at app designing as it is one of my good skills, i learnt at my college And
+                        my school, I can give you a good design</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Data Analysis</h2> 
+                    <p>I can do it through python, one of the programming languages, I learnt python by watching
+                        some videos on youtube by the way </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!---------------------PORTFOLIO-------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1  class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>I craeted a social media app, it will connect you to the
+                        world with people</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Fun Games</h3>
+                    <p>Here you can find fun games, to play with your friends and
+                    your family</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Shopping App</h3>
+                    <p>You can buy diefferent clothes, and shoes and stuff all
+                        that online</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+
+</div>
+<!-----------CONTACT----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>Ahmed123@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+974 33858015</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <input type="text" name="Name" placeholder="Enter your name.." required>
+                    <input type="email" name="Email" placeholder="Enter your email.." required>
+                    <textarea name="Message" rows="6" placeholder="Enter your message.." required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    <input type="hidden" name="access_key" value="a33a3b20-f3bd-4b96-a5d6-e0a55ea5328d">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>this whole website is made by Mr. Ahmed <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+
+    <script src="main.js"></script>
+    <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbwRBk5831yIgvfUzBGFxShcDM1nQcmo1OHdCNhnCZEZbD3oErmh505In9deAMUe2aUe/exec>'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
