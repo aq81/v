@@ -14,12 +14,12 @@
                 <h1 class="logo"></h1>
                 
                 <ul id="sidemenu">
-                    <li><a href="#header" onclick="closemenu()">Home</a></li>
-                    <li><a href="#about" onclick="closemenu()">About</a></li>
-                    <li><a href="#services" onclick="closemenu()">Services</a></li>
-                    <li><a href="#portfolio" onclick="closemenu()">Work</a></li>
-                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <li><a href="#header" class="gh ac" onmouseover="hhome()" onclick="closemenu()" >Home</a></li>
+                    <li><a href="#about" onmouseover="hhome()" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onmouseover="hhome()"  onclick="closemenu()">Services</a></li>
+                    <li><a href="#portfolio" onmouseover="hhome()" onclick="closemenu()">Work</a></li>
+                    <li><a href="#contact" onmouseover="hhome()" onclick="closemenu()">Contact</a></li>
+                    <i class="fas fa-times" onmouseover="hhome()" onclick="closemenu()"></i>
                 </ul>
                 <i id="ww" class="fas fa-bars" onclick="openmenu()"></i>
                 
@@ -150,7 +150,7 @@
                 <p><i class="fas fa-paper-plane"></i>Ahmed123@gmail.com</p>
                 <p><i class="fas fa-phone-square-alt"></i>+974 33858015</p>
                 <div class="social-icons">
-                  <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
                     <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -173,21 +173,7 @@
     </div>
 </div>
 
-
-
-
-
-    <script src="main.js"></script>
-    <script>
-        const scriptURL = '<https://script.google.com/macros/s/AKfycbwRBk5831yIgvfUzBGFxShcDM1nQcmo1OHdCNhnCZEZbD3oErmh505In9deAMUe2aUe/exec>'
-        const form = document.forms['submit-to-google-sheet']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+<script src="main.js"></script>
+    
 </body>
 </html>
